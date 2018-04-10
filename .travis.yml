@@ -26,7 +26,7 @@ matrix:
 #   - pwsh -f "${env:TRAVIS_BUILD_DIR}/build.ps1"
 
 script:
-  - . .\build\Start-Build.ps1 -Task Deploy
+  - . ${env:TRAVIS_BUILD_DIR}/Start-Build.ps1 -Task Deploy
 
 # after_success:
 #   - pwsh -f "${env:TRAVIS_BUILD_DIR}/deploy.ps1"
